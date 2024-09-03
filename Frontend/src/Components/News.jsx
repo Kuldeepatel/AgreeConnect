@@ -8,7 +8,7 @@ const News = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/api/v1/news');
+        const response = await axios.get('https://agree-connect.vercel.app/api/v1/news');
         setNews(response.data.news); // Adjusted to reflect the correct data structure
         console.log(response.data.news); // Updated to log the correct data
       } catch (error) {
