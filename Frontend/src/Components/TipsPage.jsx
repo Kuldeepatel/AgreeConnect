@@ -11,7 +11,7 @@ const TipsPage = () => {
   useEffect(() => {
     const fetchCropDetails = async () => {
       try {
-        const response = await axios.post('http://localhost:8000/api/v1/disease-detection/tips-tricks', {
+        const response = await axios.post('https://agree-connect.vercel.app/api/v1/disease-detection/tips-tricks', {
           Crop_Name: cropName,
         });
 
